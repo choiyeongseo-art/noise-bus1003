@@ -1,0 +1,55 @@
+/* Messaging is a dedicated full-screen experience, independent of the lobby. */
+.app-shell[data-view="story"]{height:100dvh;min-height:0;overflow:hidden;color:#172033}
+.app-shell[data-view="story"] .main-shell{height:100%;display:flex;flex-direction:column}
+.app-shell[data-view="story"] .topbar,
+.app-shell[data-view="story"] .page-heading,
+.app-shell[data-view="story"] .preview-banner,
+.app-shell[data-view="story"] .resource-strip,
+.app-shell[data-view="story"] .right-column{display:none}
+.app-shell[data-view="story"] main{width:100%;flex:1;min-height:0;display:flex;flex-direction:column;padding:env(safe-area-inset-top) 0 calc(70px + env(safe-area-inset-bottom));margin:0}
+.app-shell[data-view="story"] .game-layout{flex:1;min-height:0;gap:0}
+.app-shell[data-view="story"] .content-column{flex:1;min-height:0;display:flex;flex-direction:column}
+.app-shell[data-view="story"][data-room="true"] main{padding-bottom:env(safe-area-inset-bottom)}
+.app-shell[data-view="story"][data-room="true"] .mobile-nav{display:none}
+.app-shell[data-view="story"] .chat-panel{flex:1;height:auto;min-height:0;border:0;border-radius:0;box-shadow:none;display:flex;flex-direction:column}
+.dm-inbox{flex:1;overflow-y:auto;overscroll-behavior:contain;background:#fff}
+.dm-inbox-header{display:flex;align-items:center;justify-content:space-between;padding:30px 24px 25px;color:#2457f5}
+.dm-kicker{font-size:10px;font-weight:800;letter-spacing:1.8px;color:#2457f5}
+.dm-inbox-header h1{font-size:30px;letter-spacing:-1.3px;line-height:1.3;margin-top:7px;color:#131a29;font-weight:800}
+.dm-inbox-header h1>span{color:#2457f5;margin-left:3px}
+.dm-section-label{display:flex;gap:8px;align-items:center;padding:13px 24px 15px;border-bottom:1px solid #f0f1f5;font-size:13px;font-weight:700;color:#263249}
+.dm-section-label>span{color:#2457f5;font-size:12px}
+.dm-thread{display:flex;align-items:center;width:100%;gap:14px;padding:19px 22px;text-align:left;min-height:98px;border-bottom:1px solid #f1f2f6;color:#8a91a2}
+.dm-thread:hover{background:#f7f9ff}.dm-thread:active{background:#eef2ff}
+.dm-group-avatar{width:57px;height:57px;display:grid;place-items:center;background:#2457f5;color:#fff;border-radius:21px;flex-shrink:0;box-shadow:0 5px 12px #2457f526}
+.dm-avatar-wrap{position:relative;flex-shrink:0}.dm-avatar-wrap .avatar{width:57px;height:57px;border:1px solid #edf0f5}.dm-avatar-wrap>i{position:absolute;bottom:0;right:0;width:13px;height:13px;border:3px solid #fff;border-radius:50%;background:#13bd7a}
+.dm-thread-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:6px}
+.dm-thread-copy>strong{display:flex;align-items:center;gap:7px;font-size:15px;color:#192235;font-weight:700}
+.dm-thread-copy>strong small{font-size:10px;letter-spacing:.5px;color:#778195;font-weight:500}
+.dm-group-count{font-size:12px;color:#8c94a5;font-weight:500}
+.dm-thread-copy>span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;color:#647087;line-height:1.5}
+.dm-thread-copy>small{font-size:10px;color:#2457f5}.dm-thread-locked .avatar{filter:saturate(.45)}.dm-thread-locked .dm-thread-copy>strong{color:#5b6477}
+.app-shell[data-view="story"] .chat-header{padding:10px 15px 10px 6px;min-height:70px;border-bottom:1px solid #e9ecf2;background:#fff;gap:10px;flex-shrink:0;z-index:2}
+.dm-back{display:grid;place-items:center;min-width:44px;min-height:44px;color:#18233a;border-radius:50%}.dm-back:hover{background:#f0f3fa}
+.app-shell[data-view="story"] .chat-header .group-icon{width:40px;height:40px;border-radius:15px;background:#2457f5;color:#fff}.app-shell[data-view="story"] .chat-header .avatar{width:40px;height:40px}
+.app-shell[data-view="story"] .chat-header h2{font-size:14px;color:#171f30;letter-spacing:-.3px;font-weight:700}
+.app-shell[data-view="story"] .chat-header p{font-size:10px;color:#5c687d;line-height:1.4;margin-top:4px}.app-shell[data-view="story"] .chat-header .live-dot{background:#12b87b;width:5px;height:5px}
+.app-shell[data-view="story"] .channel-badge{display:none}
+.app-shell[data-view="story"] .chat-feed{height:auto;flex:1;min-height:0;padding:22px 16px;background:#fff;scrollbar-width:thin;scrollbar-color:#d2d9e8 transparent;overscroll-behavior:contain}
+.app-shell[data-view="story"] .chat-intro{padding:8px 0 30px}.app-shell[data-view="story"] .chat-intro>span{font-weight:800;font-size:11px;letter-spacing:4px;color:#2457f5}.app-shell[data-view="story"] .chat-intro p{font-size:13px;color:#172033;font-weight:700}.app-shell[data-view="story"] .chat-intro small{font-size:11px;color:#758096}
+.app-shell[data-view="story"] .scene-divider{justify-content:center;gap:7px;font-size:10px;color:#768199;margin:16px 0 20px;padding:0;line-height:1.6}.app-shell[data-view="story"] .scene-divider:before{display:none}.app-shell[data-view="story"] .scene-divider time{font-size:10px;color:#768199}
+.app-shell[data-view="story"] .narration{color:#667187!important;font-size:12px;line-height:1.9;margin:8px auto 24px}
+.app-shell[data-view="story"] .message{gap:8px;max-width:91%;margin:18px 0}.app-shell[data-view="story"] .message .avatar.small{width:31px;height:31px;margin-top:1px}.app-shell[data-view="story"] .message-name{font-size:11px;color:#414e66;padding:0 0 6px;font-weight:600}.app-shell[data-view="story"] .message-name small{display:none}
+.app-shell[data-view="story"] .bubble{background:#f0f2f6;border:0;border-radius:4px 19px 19px 19px;padding:12px 15px;color:#182236;font-size:14px;line-height:1.75;letter-spacing:-.25px;box-shadow:none;overflow-wrap:anywhere}
+.app-shell[data-view="story"] .message.outgoing{max-width:84%;margin-left:auto;gap:5px;flex-direction:column;align-items:flex-end;padding-top:0}
+.app-shell[data-view="story"] .outgoing .bubble{background:#2457f5;color:#fff;border-radius:19px 4px 19px 19px;border:0;font-size:14px}
+.app-shell[data-view="story"] .you-tag{font-size:9px;color:#76839b;align-self:flex-end;padding:1px 3px 0}
+.app-shell[data-view="story"] .past{opacity:1;margin-bottom:26px}
+.app-shell[data-view="story"] .composer{background:#fff;border-top:1px solid #e9ecf2;padding:13px 15px 16px;flex-shrink:0;box-shadow:0 -8px 25px #16234a04;max-height:45dvh;overflow-y:auto}
+.app-shell[data-view="story"] .composer>p{font-size:11px;font-weight:600;color:#243149;margin-bottom:10px}.app-shell[data-view="story"] .composer>p>svg{display:none}.app-shell[data-view="story"] .composer>p>span{font-size:9px;color:#69758c;font-weight:400}
+.app-shell[data-view="story"] .choices{gap:8px}.app-shell[data-view="story"] .choices>button{min-height:48px;padding:12px 14px;border:1px solid #c9d5ff;border-radius:16px;background:#f3f6ff;color:#173faf;font-size:13px;line-height:1.65;gap:10px}.app-shell[data-view="story"] .choices>button:hover:not(:disabled){background:#e8efff;border-color:#2457f5}.app-shell[data-view="story"] .choices>button:active:not(:disabled){background:#dce6ff}.app-shell[data-view="story"] .choice-letter{display:none}.app-shell[data-view="story"] .choices>button>svg{color:#2457f5;width:18px}.app-shell[data-view="story"] .choices small{color:#66758f;font-size:10px}
+.app-shell[data-view="story"] .personal-send{background:#2457f5;color:#fff;border:0;font-size:13px;min-height:49px;border-radius:22px}
+.app-shell[data-view="story"] .personal-intro h3{color:#172033}.app-shell[data-view="story"] .personal-intro p{color:#5b687f!important;font-size:12px}.app-shell[data-view="story"] .locked-info{color:#536789}.app-shell[data-view="story"] .locked-info p{color:#63738d}.app-shell[data-view="story"] .chapter-done{color:#50627d;font-size:12px}
+.app-shell[data-view="story"] .conflict-banner{flex-shrink:0;margin:8px;border:1px solid #f0c8b2;background:#fff5ed;color:#8d4824}
+.app-shell[data-view="story"][data-room="true"]>.toast{bottom:calc(18px + env(safe-area-inset-bottom));color:#23334f;pointer-events:none;font-size:11px}
+@media(max-width:360px){.dm-inbox-header{padding:24px 18px}.dm-thread{padding:17px 15px;gap:11px}.dm-thread-copy>strong{font-size:14px}.app-shell[data-view="story"] .chat-header h2{font-size:12px}.app-shell[data-view="story"] .bubble{font-size:13px}.app-shell[data-view="story"] .choices>button{font-size:12px}}
