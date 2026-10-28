@@ -5,3 +5,4 @@ createRoot(document.getElementById('root')!).render(<GameApp/>);
 import './portrait.css';
 import './messenger.css';
 import './studio.css';
+import './feedback.css';
