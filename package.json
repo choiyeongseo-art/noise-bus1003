@@ -11,7 +11,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --experimental-strip-types scripts/game.test.mjs"
+    "test": "node --experimental-strip-types scripts/game.test.mjs && node --experimental-strip-types scripts/onboarding.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",

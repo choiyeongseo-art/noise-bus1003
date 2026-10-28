@@ -6,3 +6,4 @@ import './portrait.css';
 import './messenger.css';
 import './studio.css';
 import './feedback.css';
+import './tutorial.css';
